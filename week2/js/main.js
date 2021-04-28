@@ -6,30 +6,30 @@ const quiz = [
 
 function start(quiz){
     let score = 0;
-    // main game loop
+ 
     for(const [question,answer] of quiz){
           const response = ask(question);
             check(response,answer);
     }
-    // end of main game loop
+   
     gameOver();
 
-    function ask(question){
+function ask(question){
           return prompt(question);
     }
 
-    function check(response,answer){
+function check(response,answer){
           if(response === answer){
                 alert('Correct!');
                 score++; } 
           else {
                 alert(`Wrong! The correct answer was ${answer}`);
                }
-    } //end of check
+    } 
 
-    function gameOver(){
+function gameOver(){
                   alert(`Game Over, you scored ${score} point${score !== 1 ? 's' : ''}`);
              }
     }
 
-    start(quiz);
+start(quiz);
