@@ -7,7 +7,6 @@ const links = [
       label: "Week2 notes",
       url: "../portfolios/week2/index.html"
     } 
-
   ]
 
 var olist = document.getElementById("list");
