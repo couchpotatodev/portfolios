@@ -2,7 +2,12 @@ const links = [
     {
       label: "Week1 notes",
       url: "../portfolios/week1/index.html"  
+    },
+    {
+      label: "Week2 notes",
+      url: "../portfolios/week2/index.html"
     } 
+
   ]
 
 var olist = document.getElementById("list");
