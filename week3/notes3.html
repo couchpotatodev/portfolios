@@ -9,85 +9,81 @@
 <body>
     <h1>Notes for week 3</h1>    
     <section>
-         <h2>Programming basics</h2>    
-         <h2>Variables</h2>
-            <p>Variables are used in programming languages to refer to a value stored in memory.</p>
-        <h2>Primitive Data Types</h2>
-            <ol>
-                <li>String</li>
-                <li>Number</li>
-                <li>Symbol</li>
-                <li>Boolean</li>
-                <li>Undefined</li>
-                <li>Null</li>
-            </ol>
-            <p>*Any value that isn’t one of the primitive data types listed above is an object. (example -  arrays, functions and object literals)</p>
-        <h2>Scope</h2>
-            <ol>
-                <li>Global scope</li>
-                    <p>It is accessible everywhere in the program</p>
-                <li>Local scope</li>
-                    <p>This means that any variables defined inside a block using the let or const will only be available inside that block and not be accessible outside of that block.</p>
-            </ol>
-        <h2>Template Literals</h2>
-            <p>A special types of string that were introduced in ES6. Template literals use the backtick character, ` , to deliminate the string.
-                This means that a JavaScript expression can be inserted inside a string and the result will be displayed.
-                Template literals can also contain line breaks, which are all converted into a Line Feed (\n)</p>
-        <h2>Hard equality</h2>    
-            <p>NaN is the only value in JavaScript that is not equal to itself</p>
+         <h2>Object literals</h2>    
+         <p>An object in JavaScript is a self-contained set of related values and functions.</p>
+         <h2>Method</h2>
+         <p>If a property’s value is a function, it is known as a method.</p>
+         <h2>Naming </h2>    
+         <p>If a property’s name doesn’t follow the rules for naming variables, it needs to be quoted. </p>
+         <h2>Accessing properties</h2>
+         <p>You can access the properties of an object using the dot notation.
+            You can also access an object’s properties using bracket notation. </p>
+         <h2>Calling methods</h2>    
+         <p>To call an object’s method we can also use dot or bracket notation. Calling a method is the same as invoking a function, so parentheses need to be placed after the method name</p>
+         <h2>Checking if Properties or Methods Exist</h2>
+         <p>The in operator can be used to check whether an object has a particular property.
+            Another way is to use the hasOwnProperty()</p>
+         <h2>Object.entries()</h2>   
+         <p>Returns an array consisting of enumerable property [key, value] pairs of the object which are passed as the parameter.</p>
+         <h2>Object.values()</h2>
+         <p>Returns an array whose elements are the enumerable property values found on the object</p>
+         <h2>Object.keys()</h2>
+         <p>The Object.keys() method will return an array of all the keys of any object that is provided as an argument</p>
+         <h2>Adding Properties</h2>
+         <p>New properties and methods can be added to objects at any time in a program. This is done by simply assigning a value to the new property.</p>
+         <h2>Removing Properties</h2>
+         <p>Any property can be removed from an object using the delete operator</p>
+        <h2>Namespacing</h2>
+        <p>Naming collisions occur when the same variable or function name is used for different purposes by code sharing the same scope.
+            A solution to this problem is to use theobject literal patternto create a namespace for groups of related functions</p>
     </section>
     <section>
-        <h2>Arrays</h2>
-        <p>An ordered list of values</p>
-        <h2>Methods</h2>
+        <h2>Creating regular expressions</h2>
         <ul>
-            <li>pop</li>
-            <li>shift</li>
-            <li>push</li>
-            <li>unshift</li>
-            <li>concat</li>
-            <li>join</li>
-            <li>slice</li>
-            <li>splice</li>
-            <li>reverse</li>
-            <li>sort</li>
-            <li>indexOf</li>
-            <li>includes</li>
+            <li>Literal notation</li>
+            <li>Create a new instance of RegExp</li>
         </ul>
-        <h2>Sets</h2>
-        <p>An empty set is created using the new operator and Set() constructor</p>
-        <h2>Maps</h2>
-        <p>A convenient way of keeping a list of key and value pairs, and are similar to
-            “hashes”, or“hash tables” or “dictionaries” in other programming languages.</p>
-        <h2>Loops</h2>
-        <ol>
-            <li>while loop</li>
-            <li>do while loop</li>
-            <li>for loop</li>
-        </ol>
+        <h2>DOM</h2>     
+        <p>Allows access to elements of a web page and enable interaction with the page by adding and removing elements, changing the order, content and attributes of elements, and even altering how they are styled.</p>    
+        <h2>DOM Shortcut methods</h2>
+        <ul>
+            <li>document.body</li>
+            <li>document.image</li>
+            <li>document.links</li>
+            <li>document.anchors</li>
+            <li>document.forms</li>
+        </ul>
+        <h2>Query selectors</h2>
+        <ul>
+            <li>document.querySelector()</li>
+            <li>document.querySelectorAll()</li>
+        </ul>
     </section>
     <section>    
-        <h2>Function</h2>
-        <p> A chunk of code that can be referenced by a name, and is almost like a small, self-contained mini program. Functions can help reduce repetition and make code easier to follow.</p>
-        <h2>Declaration</h2>
-        <p>To define a function literal we can use a function declaration. This starts with the function keyword and is followed by the name of the function.  
-            ES6 introduced a new way to define functions, using what is known as “arrow” notation.</p>
-        <h2>Invoking a function</h2>
-        <p>To invoke a function, simply enter its name, followed by parentheses.</p>
-        <h2>Parameters and Arguments</h2>
-        <p>Parameters and arguments are terms that are often used interchangeably to represent values provided for the function as an input.</p>
-        <p>There is a subtle difference though: any parameters a function needs are set when the function is
-            defined. When a function is invoked, it is provided with arguments.</p>
-        <h2>Arrow Function</h2>
-        <p>Arrow functions can be identified by the arrow symbol, => that gives them their name. The parameters come before the arrow and the main body of the function
-            comes after. Arrow functions are always anonymous, so if you want to refer to them, you must assign them to a variable.</p>
-        <h2>Callbacks</h2>
-        <p> A function that is passed as an argument to another is known as a callback.</p>
-        
-
-
-
-
+        <h2>Event handlers</h2>
+        <h2>Event listeners</h2>
+        <p>The recommended way of dealing with events, and the current standard, is to use event listeners</p>
+        <h2>Event target</h2>
+        <p>The target property returns a reference to the node that fired the event.</p>
+        <h2>Coordinates of an event</h2>
+        <ul>
+            <li>screenX and screenY</li>
+            <li>clientX and clientY</li>
+            <li>pageX and pageY</li>
+        </ul>
+        <h2>Mouse events</h2>
+        <ul>
+            <li>mousedown</li>
+            <li>mouseup</li>
+        </ul>
+        <h2>Keyboard events</h2>
+        <ul>
+            <li>keydown</li>
+            <li>keypress</li>
+            <li>keyup</li>
+        </ul>
+        <h2>Stopping default behavior</h2>
+        <p>preventDefault() is a method of the event object that can be used inside the callback function to stop the default behavior happening</p>
    </section>
 </body>
 </html>
