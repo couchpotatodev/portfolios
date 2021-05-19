@@ -4,49 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 4 | Notes</title>
+    <title>Week 5 | Notes</title>
 </head>
 <body>
-    <h1>Notes for week 4</h1>    
+    <h1>Notes for week 5</h1>    
     <section>
-         <h2>Forms</h2>    
-         <h2>Accessing Form Elements</h2>
-         <p>The legacy DOM had a useful property called document.forms that returns an HTML collection of all the forms in the document in the order they appear in the markup</p>
-         <h2>square bracket notation</h2>
-         <p>this is required if the form’s name attribute contains any invalid characters, such as spaces or dashes</p>
-         <h2>form.submit() method</h2>
-         <p>It will submit the form automatically. Note that submitting a form using this method won’t trigger the form submit event</p>
-         <h2>form.reset() method </h2>
-         <p>It will reset all the form controls back to their initial values specified in the HTML
-            A button with a type attribute of reset can also be used to do this without the need for additional scripting</p>
-        <h2>form.action property</h2>
-        <p>It can be used to set the action attribute of a form, so it’s sent to a different URL to be processed on the server</p>
+         <h2>Errors</h2>    
+          <ul>
+              <li>System error</li>
+              <li>Programmer error</li>
+              <li>User error</li>
+          </ul>
+          <h2>Warnings</h2>
+          <p>A warning can occur if there’s an error in the code that isn't enough to cause the program to crash</p>
+          <h2>strict mode</h2>
+          <p>ECMAScript 5 introduced a strict mode that produces more exceptions and warnings and prohibits the use of some deprecated features.
+            Strict mode encourages a better quality of JavaScript to be written.</p>
+          <p>Added to the first line of a JavaScript file: 'use strict'; </p>
+        <h2>Linting tools</h2>
+        <p>Linting tools such asJS Lint,JS Hint,andES Lintcan be used to test the quality of JavaScript code, beyond simply using strict mode.
+            Linting tools are also useful for enforcing a programming style guide.</p>
+       <h2>Debugging</h2>     
+       <ul>
+           <li>alert() method</li>
+           <li>console.log() method</li>
+           <li>console.trace() method </li>
+           <li>debugger keyword</li>
+       </ul>
+       <h2>error objects</h2>
+       <p>An error object can be created by the host environment when an exception occurs, or it can be created in the code using a constructor function</p>
+       <ul>
+           <li>EvalError</li>
+           <li>RangeError</li>
+           <li>ReferenceError</li>
+           <li>SyntaxError</li>
+           <li>TypeError</li>
+           <li>URIError</li>
+           <li>InternalError</li>
+       </ul>
+
+
     </section>
-    <section>
-        <h2>Object-Oriented Programming</h2>
-        <p>A style of programming that involves separating the code into objects that have properties and methods</p>
-        <h2>The Prototype Property</h2>
-        <h2>Finding Out the Prototype</h2>
-        <p>One way is to go via the constructor function’s prototype property.
-           Another way is to use the Object.getPrototypeOf() method, which takes the object as a parameter</p>
-        <h2>What Should the Prototype Be Used For?</h2>
-        <p>The prototype can be used to add any new properties and methods after the class has been declared</p>
-        <p>Be careful when overwriting the prototype completely ― the constructor class needs to be reset</p>
-    </section>
-    <section>    
-        <h2>HTML5</h2>
-        <h2>The data- Attribute</h2>
-        <p>The data- attribute is a way of embedding data in a web page using custom attributes that are ignored by the browser</p>
-        <h2>Format</h2>
-        <ul>
-            <li>Start with data-</li>
-            <li>Contain only lowercase letters, numbers, hyphens, dots, colons or underscores</li>
-            <li>Include an optional string value</li>
-        </ul>
-        <h2>Geolocation</h2>
-        <p>The Geolocation API is used to obtain the geographical position of the device</p>
-        <h2>Multimedia</h2>
-        <p>HTML5 introduced the audio and video tags used to insert audio and video clips into a web page. It also introduced a Media API for controlling the playback of the clips using JavaScript</p>         
-   </section>
+    
 </body>
 </html>
