@@ -95,7 +95,6 @@ todoItemsList.addEventListener('click', function(event) {
     deleteTodo(event.target.parentElement.getAttribute('data-key'));
   }
 });
-
  
 function updateCount(todos){
   const taskCounter = document.getElementById('counter');
@@ -135,6 +134,11 @@ function completed(todos){
       ctr1++;
       taskCounter.innerHTML = `${ctr1} task(s) completed`;
     }  
-  });
+
+    if (ctr1 == 0){
+      taskCounter.innerHTML =  `0 tasks completed`;
+        }
+   });
+
  } 
 
