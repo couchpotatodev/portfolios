@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 7 | Notes</title>
+</head>
+<body>
+    <h1>Notes for week 7</h1>    
+    <section>
+         <h2>Functions</h2>    
+         <p>The fact that functions are first-class objects means they can have properties and methods themselves.</p>
+         <h3>Call and Apply methods</h3>
+         <p>The call() method can be used to set the value of this inside a function to an object that is provided as the first argument.</p><br>
+         <p>The apply() method works in the same way, except the arguments of the function are provided as an array, even if there is only one argument.</p>
+         <h3>Custom properties</h3>
+         <p>There is nothing to stop you adding your own properties to functions in the same way that you can add properties to any object in JavaScript.</p>
+         <h3>Memoization</h3>
+         <p>A useful feature of this is that it provides result caching, or memoization. If a function takes some time to compute a return value, we can save the result in a cache property.</p>
+         <h3>Immediately Invoked Function Expressions</h3>
+         <p>An Immediately Invoked Function Expression– or IIFE is an anonymous function that, as the name suggests, is invoked as soon as it’s defined. This is easily achieved by placing parentheses at the end of the function definition
+            An IIFE can be used to enclose a block of code inside its own private scope so it doesn’t interfere with any other part of the program.</p>
+        <h3>Recursive Functions</h3>
+        <p>A recursive function is one that invokes itself until a certain condition is met. It’s a useful tool to use when iterative processes are involved.</p>
+        <h3>Event-driven Asynchronous Programming</h3>
+        <p>Callbacks can be used to facilitate event-driven asynchronous programming.</p>
+        <h3>Promises</h3>
+        <p>A promise represents the future result of an asynchronous operation. Promises don't do anything that can't already be achieved using callbacks, but they help simplify the process, and avoid the convoluted code that can result from using multiple callbacks.</p>
+        <h3>Async Functions</h3>
+        <p>These functions are preceded by the async keyword and allow you to write asynchronous code as if it was synchronous. This is achieved by using the await operator before an asynchronous function.</p>
+        <h3>Generators</h3>
+        <p>These are special functions used to produce iterators that maintain the state of a value.</p>
+        <h3>Currying</h3>
+        <p>Currying is a process that involves the partial application of functions</p><br>
+        <h2>AJAX</h2>
+        <p>Ajax is a technique that allows web pages to communicate asynchronously with a server, and it dynamically updates web pages without reloading.
+            Ajax allows JavaScript to request resources from a server on behalf of the client.</p>
+        <h3>Cross-origin resource sharing (CORS)</h3>
+        <p>It allows resources to be requested from another website outside the original domain.</p>
+        <h3>Fetch API</h3>
+        <p>Basic usage: Provides a global fetch() method that only has one mandatory argument, which is the URL of the resource you wish to fetch</p>
+        <h3>Response interface</h3>
+        <p>Deals with the object that’s returned when the promise is fulfilled. Response objects have a number of properties and methods that allow us to process the response effectively.</p>
+        <h3>some properties:</h3>
+        <ul>
+            <li>headers</li>
+            <li>url</li>
+            <li>redirected</li>
+            <li>type</li>
+        </ul>
+        <h3>text()</h3>
+        <p>The text() method takes a stream of text from the response, reads it to completion and then returns a promise that resolves to a USVSting object that can be treated as a string in JavaScript.</p>
+        <h3>blob()</h3>
+        <p>The blob() method is used to read a file of raw data, such as an image or a spreadsheet.</p>
+        <h3>JSON response</h3>
+        <p>JSON is probably the most common format for AJAX responses.</p>
+        <h3>json()</h3>
+        <p>The json() method is used to deal with these by transforming a stream of JSON data into a promise that resolves to a JavaScript object.</p>
+        <h3>Hypertext transfer protocol five most commonly used verbs</h3>
+        <ul>
+            <ol>GET</ol>
+            <ol>POST</ol>
+            <ol>PUT</ol>
+            <ol>PATCH</ol>
+            <ol>DELETE</ol>
+        </ul>       
+    </section>
+    
+</body>
+</html>
