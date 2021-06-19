@@ -30,7 +30,11 @@ const links = [
     {
       label: "Week8 notes",
       url: "../portfolios/week8/index.html"
-    }    
+    },
+    {
+      label: "Week9 notes",
+      url: "../portfolios/week9/index.html"
+    }        
   ]
 
 var olist = document.getElementById("list");
