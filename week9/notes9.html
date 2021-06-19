@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 9 | Notes</title>
+</head>
+<body>
+    <h1>Notes for week 9</h1>    
+    <section>
+         <h2>The Browser Object Model</h2>
+         <p>The Browser Object Model (or BOM for short) is a collection of properties and methods that contain information about the browser and computer screen.
+            Every browser window, tab, popup, frame, and iframe has a window object.</p>
+        <h3>window object</h3>            
+        <ul>
+            <li>alert()</li>
+            <li>confirm()</li>
+            <li>prompt()</li>
+        </ul>
+        <h3>Location</h3>
+        <p>The window.location property is an object that contains information about the URL of the current page</p>
+        <h3>Properties</h3>
+        <ul>
+            <li>navigator property</li>
+            <li>href property</li>
+            <li>protocol property</li>
+            <li>host property</li>
+            <li>port property</li>
+            <li>pathname property</li>
+            <li>search property</li>
+            <li>hash property</li>
+            <li>origin property</li>
+        </ul>
+        <h3>Methods</h3>
+        <ul>
+            <li>reload()</li>
+            <li>assign()</li>
+            <li>replace()</li>
+            <li>toString()</li>
+        </ul>
+        <h3>Browser History</h3>
+        <p>The window.history property can be used to access information about any previously visited pages in the current browser session.</p>
+        <p>The window.history.go() method can be used to go to a specific page, where 0 is the current page.</p>
+        <p>The window.history.length property shows how many pages have been visited before arriving at the current page.</p>
+        <h3>Controlling Windows</h3>
+        <h3>Methods</h3>
+        <ul>
+            <li>window.open() method</li>
+            <li>close() method</li>
+            <li>window.moveTo() method</li>
+            <li>window.resizeTo() method</li>
+        </ul>
+        <h3>Screen Information</h3>
+        <p>The window.screen object contains information about the screen the browser is displayed on. The availHeight and availWidth can be used to find the height and width of the screen.
+            The colorDepth property can be used to find the color bit depth of the user’s monitor</p>
+        <h3>The Document Object</h3>
+        <p>Each window object contains a document object. This object has properties and methods that deal with the page that has been loaded into the window.
+            The write() method simply writes a string of text to the page</p>
+        <h3>Cookies</h3>
+        <p>Cookies are small files that are saved locally on a user’s computer. Cookies are also limited to storing up to 4KB of data, although 20 cookies are allowed per domain, which can add up to quite a lot of data.</p>
+        <h3>Timing Functions</h3>
+        <h3>Methods</h3>
+        <ul>
+            <li>window.setTimeout()</li>
+            <li>window.setInterval()</li>
+            <li>window.clearInterval()</li>
+        </ul>
+    </section>
+    <section>
+        <h2>HTML5</h2>
+        <p>The latest version of the Hypertext Markup Language used to create web pages. HTML5 was for HTML what ES6 was for JavaScript – it added a large number of new features to the specification. It also went beyond the actual markup language and brought together a number of related technologies such as CSS and JavaScript. </p>
+        <h3>The data- Attribute</h3>
+        <p>The data- attribute is a way of embedding data in a web page using custom attributes that are ignored by the browser</p>
+        <h3>attributes</h3>
+        <ul>
+            <li>Start with data- </li>
+            <li>Contain only lowercase letters, numbers, hyphens, dots, colons or underscores</li>
+            <li>Include an optional string value.</li>
+        </ul>
+        <h3>HTML5 Web Storage</h3>
+        <p>The Web Storage API provides a key-value store on the client’s computer that is similar to using cookies but has fewer restrictions, more storage capacity, and is generally easier to use</p>
+        <h3>Geolocation</h3>
+        <p>The Geolocation API is used to obtain the geographical position of the device. This means it can be used to find the user’s exact location, then link to nearby places or measure the speed at which the user is moving</p>
+        <h3>Properties</h3>
+        <ul>
+            <li>position.speed</li>
+            <li>position.altitude</li>
+            <li>position.heading</li>
+            <li>position.timestamp</li>
+            <li>position.accuracy</li>
+        </ul>
+        <h3>Methods</h3>
+        <ul>
+            <li>watchPosition()</li>
+            <li>clearWatch()</li>
+        </ul>
+        <h3>Web Workers</h3>
+        <p>Web workers allow processes to be run in the background, adding support for concurrency in JavaScript.
+            Web workers use the concept of messages to communicate back and forth between the main script and worker script</p>
+        <h3>Methods</h3>
+        <ul>
+            <li>postMessage()</li>
+            <li>self.postMessage()</li>
+            <li>terminate()</li>
+            <li>self.close()</li>
+        </ul>
+        <h3>Service Workers</h3>
+        <p>The Service Worker API allows a worker script to run in the background with the added benefit of being able to intercept network requests. This allows you to take alternative action if the network is offline, and effectively create app-like offline experiences</p>
+        <h3>Websockets</h3>
+        <p>Websocket is a new protocol that allows two-way communication with a server – also known as push messaging. This means that a connection is kept open and responses are ‘pushed’ to the client as soon as they are received.</p>
+        <h3>Notifications</h3>
+        <p>The Notification API allows you to show messages using the system's notifications. This is usually a popup in the corner of the screen, but it changes depending on the operating system. An advantage of using the system notification is that they will still be displayed even if the web page that calls them isn't the current tab.</p>
+        <h3>Multimedia</h3>
+        <p>HTML5 introduced the <audio> and <video> tags used to insert audio and video clips into a web page. It also introduced a Media API for controlling the playback of the clips using JavaScript.</p>
+        <h3>Methods</h3>
+        <ul>
+            <li>play()</li>    
+            <li>pause()</li>
+        </ul>
+        <h3>Property</h3>
+        <ul>
+            <li>volume</li>
+            <li>muted</li>
+            <li>currentTime</li>
+            <li>playbackRate</li>
+            <li>loop</li>
+            <li>duration</li>
+        </ul>
+    </section>
+    
+</body>
+</html>
