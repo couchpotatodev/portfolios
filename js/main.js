@@ -34,7 +34,11 @@ const links = [
     {
       label: "Week9 notes",
       url: "../portfolios/week9/index.html"
-    }        
+    },
+    {
+      label: "Week10 notes",
+      url: "../portfolios/week10/index.html"
+    }            
   ]
 
 var olist = document.getElementById("list");

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 10 | Notes</title>
+</head>
+<body>
+    <h1>Notes for week 10</h1>    
+    <section>
+        <h2>Client-side form validation</h2>
+        <p>To ensure all required form controls are filled out and in the correct format. Client-side validation should not be considered an exhaustive security measure.
+            Validation done in the browser.</p>
+        <h2>Form validation</h2>
+        <p>When you enter data, the browser and/or the web server will check to see that the data is in the correct format and within the constraints set by the application</p>
+        <h2>Main reasons for form validation</h2>
+        <ul>
+            <li>We want to get the right data, in the right format</li>
+            <li>We want to protect our users' data</li>
+            <li>We want to protect ourselves</li>
+        </ul>
+        <h2>Different types of client-side validation</h2>
+        <ul>
+            <li>Built-in form validation</li>
+            <li>JavaScript validation</li>
+        </ul>
+        <h2>Validation attributes</h2>
+        <ul>
+            <li>required</li>
+            <li>minlength / maxlenth</li>
+            <li>min / max</li>
+            <li>pattern</li>
+        </ul>
+        <h2>CSS pseudo-class</h2>
+        <ul>
+            <li>:valid</li>
+            <li>:invalid</li>
+        </ul>
+        <h2>required attribute</h2>
+        <p>To make an input mandatory, add this attribute to the element. When this attribute is set, the element matches the :required UI pseudo-class and the form won't submit, displaying an error message on submission when the input is empty.
+            Specifies whether a form field needs to be filled in before the form can be submitted.</p>
+        <h2>minlength / maxlength attribute</h2>            
+        <p>Specifies the minimum and maximum length of textual data (strings)</p>
+        <h2>min / max attribute</h2>
+        <p>Specifies the minimum and maximum values of numerical input types</p>
+        <h2>pattern</h2>
+        <p>Specifies a regular expression that defines a pattern the entered data needs to follow.</p>
+        <h2>The Constraint Validation API</h2>
+        <h2>form element DOM interfaces</h2>
+        <ul>
+            <li>HTMLButtonElement (represents a button element)</li>
+            <li>HTMLFieldSetElement (represents a fieldset element)</li>
+            <li>HTMLInputElement (represents an input element)</li>
+            <li>HTMLOutputElement (represents an output element)</li>
+            <li>HTMLSelectElement (represents a select element)</li>
+            <li>HTMLTextAreaElement (represents a textarea element)</li>
+        </ul>
+        <h2>Properties</h2>
+        <ul>
+            <li>validationMessage</li>
+            <li>validity</li>
+            <li>willValidate</li>
+        </ul>
+        <h2>Methods</h2>
+        <ul>
+            <li>checkValidity()</li>
+            <li>setCustomValidity(message)</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Using Fetch</h2>
+        <p>The Fetch API provides a JavaScript interface for accessing and manipulating parts of the HTTP pipeline, such as requests and responses. It also provides a global fetch() method that provides an easy, logical way to fetch resources asynchronously across the network.</p>
+        <h2>A basic fetch request</h2>
+        <p>fetch('http://example.com/movies.json')<br>
+            .then(response => response.json())<br>
+            .then(data => console.log(data));</p>
+        <h2>Parameters</h2>
+        <ul>
+            <li>resource</li>
+            <li>init</li>
+        </ul>
+        <h2>Return value</h2>
+        <p>A Promise that resolves to a Response object</p>
+        <h2>Exceptions</h2>
+       <ul>
+           <li>AbortError</li>
+           <li>TypeError</li>
+       </ul>
+       <h2>Supplying request options</h2>
+       <p>The fetch() method can optionally accept a second parameter, an init object that allows you to control a number of different settings</p>
+       <h2>init (Optional)</h2>
+       <h2>Possible options</h2>
+       <ul>
+           <li>method</li>
+           <li>headers</li>
+           <li>body</li>
+           <li>mode</li>
+           <li>credentials</li>
+           <li>cache</li>
+           <li>redirect</li>
+           <li>referrer</li>
+           <li>referrerPolicy</li>
+           <li>integrity</li>
+           <li>keepalive</li>
+           <li>signal</li>
+       </ul>
+       <h2>Response objects</h2>
+       <h2>Common response properties</h2>
+       <ul>
+           <li>Response.status</li>
+           <li>Response.statusText</li>
+           <li>Response.ok</li>
+       </ul>
+
+    </section>
+    
+</body>
+</html>
