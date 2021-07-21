@@ -1,16 +1,15 @@
 //API declaration
 const APIkey ='api_key=2d3a7f07b5e0c3387e92eb8fb2497ad3';
 const base = 'https://api.themoviedb.org/3';
-const APIurl = base + '/discover/movie?sort_by=popularity.desc&'+APIkey;
+//const APIurl = base + '/discover/movie?sort_by=popularity.desc&'+APIkey;
 const image = 'https://image.tmdb.org/t/p/w500';
 const searchURL = base + '/search/movie?'+APIkey;
-//const searchYear = base + '/discover/movie?primary_release_year=2010&sort_by=vote_average.desc&'+APIkey;
-
+const showing = base + '/discover/movie?primary_release_date.gte=2021-07-01&primary_release_date.lte=2021-07-31&'+APIkey;
 
 const main = document.getElementById('main');
 const search = document.getElementById('search');
 const form = document.getElementById('form');
- 
+  
 
 //pagination
 const prev = document.getElementById('prev');
@@ -21,10 +20,10 @@ var currentPage = 1;
 var prevPage = 3;
 var nextPage = 2;
 var lastURL = '';
-var totalPages = 200;
+var totalPages = 500;
  
 
-getMovies(APIurl);
+getMovies(showing);
 
 
  //get movies from tmdb
