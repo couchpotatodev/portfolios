@@ -30,11 +30,11 @@ getMovies(showing);
  function getMovies(url){
     lastURL = url;
       fetch(url).then(res => res.json()).then(data => {
-        
+        //console.log(data.results)
         //save to localstorage
         localStorage.setItem('localData', JSON.stringify(data.results));
         let fromLocal = JSON.parse(localStorage.getItem("localData"));
-      
+       // console.log(fromLocal);
        
        if (fromLocal.length !== 0) {
          show(fromLocal);
@@ -80,7 +80,7 @@ function show(data){
        movieCard.innerHTML=`      
             <img src="${image+poster_path}" alt="${title}">        
        <div class="movieDetails">
-           <h3 class="title"> </h3>
+           <h3 class="title">${title}</h3>
            <span class="${color(vote_average)}">${vote_average}</span>
        </div>
        <div class="overview"><h3>Plot</h3>
