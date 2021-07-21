@@ -30,11 +30,11 @@ getMovies(showing);
  function getMovies(url){
     lastURL = url;
       fetch(url).then(res => res.json()).then(data => {
-        //console.log(data.results)
+        
         //save to localstorage
         localStorage.setItem('localData', JSON.stringify(data.results));
         let fromLocal = JSON.parse(localStorage.getItem("localData"));
-       // console.log(fromLocal);
+      
        
        if (fromLocal.length !== 0) {
          show(fromLocal);
@@ -120,19 +120,19 @@ form.addEventListener('submit', (e) => {
 //next page
 next.addEventListener('click',() => {
     if (nextPage <= totalPages){
-      pageCall(nextPage);
+      getPage(nextPage);
      }
   })
   
 //prev page
 prev.addEventListener('click',() => {
     if (prevPage > 0){
-      pageCall(prevPage);
+      getPage(prevPage);
      }
   })
 
 //get page
-function pageCall(page){
+function getPage(page){
     let urlSplit = lastURL.split('?');
     let queryParams = urlSplit[1].split('&');
     let key = queryParams[queryParams.length -1].split('=');
